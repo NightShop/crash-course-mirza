@@ -1,4 +1,12 @@
-<h1>{{title}}</h1>
+<h1>{{title | uppercase}}</h1>
+<h1>{{jsonValue | json}}</h1>
+<h3>{{newDate | date:"long"}}</h3>
+
+<!-- custom formater options -->
+<h3>{{newDate | date:"d. M. HH 'hours'"}}</h3>
+
+<h5>{{"kaj, bla, bla, bla" | truncate}}</h5>
+
 <button (click)="handleEvent()">Click me</button>
 <input placeholder="hello" [(ngModel)]="title" (keydown)="handleEvent()" />
 

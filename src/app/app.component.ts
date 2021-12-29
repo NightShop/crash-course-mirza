@@ -9,8 +9,14 @@ import { StorageService } from './storage.service';
 export class AppComponent {
   title = 'crash-course-mirza';
 
+  jsonValue = {
+    a: "hello",
+    b: "world",
+  }
+
+  newDate = new Date();
+
   handleEvent () {
     console.log("Button Clicked", this.title);
-
   }
 }
